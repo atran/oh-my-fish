@@ -10,6 +10,10 @@ set fish_theme edan2
 # Example format: set fish_plugins autojump bundler
 set fish_plugins autojump extract rails rvm rbenv rvm
 
+# Key bindings
+bind \e\[1\;5C forward-word
+bind \e\[1\;5D backward-word
+
 # Path to your custom folder (default path is $FISH/custom)
 #set fish_custom $HOME/dotfiles/oh-my-fish
 
