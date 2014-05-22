@@ -3,8 +3,23 @@
 [fish shell][fish]
 [oh my fish][oh-my-fish]
 
-[fish]: http://fishshell.com/
-[oh-my-fish]: https://github.com/bpinto/oh-my-fish
+- [fish]: http://fishshell.com/
+- [oh-my-fish]: https://github.com/bpinto/oh-my-fish
+
+## Switching to fish
+
+If you wish to use fish as your default shell, use the following command:
+
+    grep -q '^/usr/local/bin/fish$' /etc/shells; or echo '/usr/local/bin/fish' | sudo tee -a /etc/shells
+    chsh -s /usr/local/bin/fish
+
+chsh will prompt you for your password, and change your default shell.
+
+To switch your default shell back, you can run:
+
+    chsh -s /bin/bash
+
+Substitute /bin/bash with /bin/tcsh or /bin/zsh as appropriate.
 
 ## Usage
 
