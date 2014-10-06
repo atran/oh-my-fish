@@ -24,7 +24,7 @@ Substitute /bin/bash with /bin/tcsh or /bin/zsh as appropriate.
 ## Usage
 
 Hard link this local config to where it should be. Symlink doesn't work.
-`ln config.fish ~/.config/fish/config.fish`
+`ln -sf ~/.oh-my-fish/config.fish ~/.config/fish/config.fish`
 
 Enabling a new plugin or theme is as easy as it should be. Open your fish configuration file
 `~/.config/fish/config.fish` and specify the theme and the plugins you want to use.
